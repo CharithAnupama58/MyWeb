@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateCustomerPaymentFormController">
+   <children>
+      <JFXComboBox fx:id="cmbPayID" layoutX="18.0" layoutY="174.0" prefHeight="31.0" prefWidth="183.0" />
+      <Label alignment="CENTER" layoutY="-7.0" prefHeight="92.0" prefWidth="833.0" style="-fx-background-color: #88ca9c;" text="Update Customer Payment">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustId" layoutX="324.0" layoutY="174.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtTotalKg" layoutX="609.0" layoutY="174.0" onAction="#calculateTotalKg" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="324.0" layoutY="274.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtTotalPayment" layoutX="609.0" layoutY="274.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtAdvance" layoutX="324.0" layoutY="360.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtFertilizer" layoutX="609.0" layoutY="360.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXButton layoutX="651.0" layoutY="489.0" onAction="#upadtePaymentsOnAction" prefHeight="55.0" prefWidth="138.0" style="-fx-background-color: #1ca46b; -fx-background-radius: 2EM;" text="Update">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtDate" layoutX="18.0" layoutY="259.0" prefHeight="31.0" prefWidth="195.0" />
+   </children>
+</AnchorPane>

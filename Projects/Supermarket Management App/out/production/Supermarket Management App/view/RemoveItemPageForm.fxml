@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="766.0" prefWidth="684.0" stylesheets="@../asserts/styles/Form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveItemPageFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="-6.0" layoutY="-1.0" prefHeight="108.0" prefWidth="691.0" text="Remove Items">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemCode" labelFloat="true" layoutX="14.0" layoutY="150.0" onAction="#searchItemOnAction" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="660.0" promptText="Item Code" styleClass="textField" />
+      <JFXTextField fx:id="txtDescription" labelFloat="true" layoutX="13.0" layoutY="219.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="660.0" promptText="Description" styleClass="textField" />
+      <JFXTextField fx:id="txtPackSize" labelFloat="true" layoutX="14.0" layoutY="297.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="660.0" promptText="Pack Size" styleClass="textField" />
+      <JFXTextField fx:id="txtUnitPrice" labelFloat="true" layoutX="13.0" layoutY="383.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="660.0" promptText="Unit Price" styleClass="textField" />
+      <JFXTextField fx:id="txtQtyOnHand" labelFloat="true" layoutX="14.0" layoutY="452.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="660.0" promptText="Qty On Hand" styleClass="textField" />
+      <JFXButton fx:id="btnRemove" layoutX="294.0" layoutY="627.0" onAction="#removeItems" prefHeight="74.0" prefWidth="145.0" style="-fx-background-color: #808080;" text="Remove">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

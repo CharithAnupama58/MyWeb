@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="583.0" prefWidth="877.0" stylesheets="@../asserts/styles/Form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentPageFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-3.0" prefHeight="94.0" prefWidth="878.0" style="-fx-background-color: #999999;" text="Student Details">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtStID" labelFloat="true" layoutX="14.0" layoutY="127.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="839.0" promptText="Student ID" styleClass="textField" />
+      <JFXTextField fx:id="txtStName" labelFloat="true" layoutX="14.0" layoutY="192.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="839.0" promptText="Student Name" styleClass="textField" />
+      <JFXTextField fx:id="txtStAddress" labelFloat="true" layoutX="14.0" layoutY="261.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="839.0" promptText="Student Address" styleClass="textField" />
+      <JFXTextField fx:id="txtStNic" labelFloat="true" layoutX="14.0" layoutY="329.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="839.0" promptText="NIC" styleClass="textField" />
+      <JFXTextField fx:id="txtStTell" labelFloat="true" layoutX="14.0" layoutY="403.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="839.0" promptText="Telephone Number" styleClass="textField" />
+      <JFXButton fx:id="btnSave" layoutX="377.0" layoutY="484.0" onAction="#saveStudentOnAction" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #999999; -fx-background-radius: 2em;" text="Save">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

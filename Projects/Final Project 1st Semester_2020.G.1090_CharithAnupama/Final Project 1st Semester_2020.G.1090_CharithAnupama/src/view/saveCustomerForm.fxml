@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" prefHeight="655.0" prefWidth="1092.0" stylesheets="@../asserts/styles/SaveCustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveCustomerFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="107.0" prefWidth="1092.0" style="-fx-background-color: #88ca9c;" stylesheets="" text="Save Form">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustId" labelFloat="true" layoutX="264.0" layoutY="132.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="566.0" promptText="Customer ID" styleClass="textField" />
+      <JFXTextField fx:id="txtCustName" labelFloat="true" layoutX="264.0" layoutY="219.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="566.0" promptText="Customer Name" styleClass="textField" />
+      <JFXTextField fx:id="txtCustContact" labelFloat="true" layoutX="264.0" layoutY="297.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="566.0" promptText="Contact" styleClass="textField" />
+      <JFXTextField fx:id="txtCustNic" labelFloat="true" layoutX="264.0" layoutY="365.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="566.0" promptText="Nic" styleClass="textField" />
+      <JFXTextField fx:id="txtCustAddress" labelFloat="true" layoutX="264.0" layoutY="440.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="31.0" prefWidth="566.0" promptText="Address" styleClass="textField" />
+      <JFXButton fx:id="btnSave" layoutX="482.0" layoutY="574.0" onAction="#saveCustomerOnAction" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: #1ca46b; -fx-background-radius: 2em;" text="Save">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

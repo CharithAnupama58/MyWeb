@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="782.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlyIncomeFormController">
+   <children>
+      <TableView fx:id="tblIncome" layoutX="51.0" layoutY="134.0" prefHeight="557.0" prefWidth="760.0">
+        <columns>
+          <TableColumn fx:id="colMonth" prefWidth="335.0" text="Month" />
+          <TableColumn fx:id="colIncome" prefWidth="406.0" text="Income" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutY="-4.0" prefHeight="113.0" prefWidth="822.0" text="Monthly Income Form">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="680.0" layoutY="710.0" onAction="#loadDataOnAction" prefHeight="46.0" prefWidth="139.0" style="-fx-background-color: #808080;" text="Load Data">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

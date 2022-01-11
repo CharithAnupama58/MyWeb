@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="672.0" prefWidth="919.0" style="-fx-background-radius: 2em;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="110.0" prefWidth="919.0" style="-fx-background-color: #00FF00;" text="SIPSEWANA INSTITUTE">
+         <font>
+            <Font name="System Bold" size="65.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="612.0" fitWidth="1013.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/istockphoto-1307457391-170667a.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="267.0" layoutY="176.0" onAction="#openRegistrationForm" prefHeight="72.0" prefWidth="372.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 2em;" text="Student Registration">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="273.0" layoutY="330.0" onAction="#openAddNewForm" prefHeight="72.0" prefWidth="372.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 2em;" text="Add New Course">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="274.0" layoutY="483.0" onAction="#openStudentDetailsForm" prefHeight="72.0" prefWidth="372.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 2em;" text="Student Details">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

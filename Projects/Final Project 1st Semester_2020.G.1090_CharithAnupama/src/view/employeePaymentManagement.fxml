@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeePaymentPageContext" prefHeight="750.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeePaymentManagementController">
+   <children>
+      <ImageView fitHeight="752.0" fitWidth="1341.0" layoutX="-326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/img0.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="325.0" layoutY="90.0" onAction="#openMakeEmployeePaymentPage" prefHeight="141.0" prefWidth="470.0" style="-fx-background-color: #67e464; -fx-background-radius: 2EM;" text="Make Employee Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="325.0" layoutY="324.0" onAction="#openUpdateEmployeePaymentPage" prefHeight="141.0" prefWidth="470.0" style="-fx-background-color: #67e464; -fx-background-radius: 2EM;" text="Update Employee Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="676.0" onAction="#backToAdminPage" prefHeight="61.0" prefWidth="111.0" style="-fx-background-color: #88ca9c; -fx-background-radius: 2EM;" text="Back">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="manageOrdersPageContext" prefHeight="616.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderPageController">
+   <children>
+      <ImageView fitHeight="648.0" fitWidth="971.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/DSC2306.1506081021.2082.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER" layoutX="59.0" layoutY="181.0" onAction="#updateOrderDetailsOnAction" prefHeight="196.0" prefWidth="322.0" style="-fx-background-color: #FFFFFF;" text="Update Order Details">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="588.0" layoutY="181.0" onAction="#removeOrdersOnAction" prefHeight="196.0" prefWidth="298.0" style="-fx-background-color: #FFFFFF;" text="Remove Orders">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="533.0" onAction="#backToCashierPage" prefHeight="63.0" prefWidth="152.0" style="-fx-background-color: #808080;" text="Back">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

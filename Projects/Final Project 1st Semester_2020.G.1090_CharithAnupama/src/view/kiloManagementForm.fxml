@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="571.0" prefWidth="943.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KiloManagementFormController">
+   <children>
+      <JFXButton layoutX="122.0" layoutY="206.0" onAction="#openMonthly" prefHeight="99.0" prefWidth="283.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Monthly ">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="546.0" layoutY="206.0" onAction="#openAnual" prefHeight="99.0" prefWidth="283.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Annual ">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

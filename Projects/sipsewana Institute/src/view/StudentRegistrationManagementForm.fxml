@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerForm" prefHeight="713.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentRegistrationManagementFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="714.0" prefWidth="273.0" style="-fx-background-color: #00FF00;" />
+      <JFXButton layoutX="9.0" layoutY="119.0" onAction="#openStudentForm" prefHeight="72.0" prefWidth="256.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 2em;" text="Student Registration">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="9.0" layoutY="254.0" onAction="#openCourseForm" prefHeight="72.0" prefWidth="256.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 2em;" text="Course Register">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="826.0" fitWidth="1069.0" layoutX="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/high_school_ice_breaker.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="formContext" layoutX="369.0" layoutY="54.0" prefHeight="583.0" prefWidth="877.0" style="-fx-background-color: #ffffff;" />
+      <JFXButton layoutX="63.0" layoutY="608.0" onAction="#backToHomePage" prefHeight="72.0" prefWidth="148.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 2em;" text="Back">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

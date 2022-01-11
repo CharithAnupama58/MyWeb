@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="648.0" prefWidth="1077.0" stylesheets="@../asserts/styles/SaveCustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveEmployeeFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="107.0" prefWidth="1077.0" style="-fx-background-color: #88ca9c;" text="Save Form">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmpId" labelFloat="true" layoutX="302.0" layoutY="139.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="561.0" promptText="Employee ID" styleClass="textField" />
+      <JFXTextField fx:id="txtEmpName" labelFloat="true" layoutX="302.0" layoutY="219.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="561.0" promptText="Employee Name" styleClass="textField" />
+      <JFXTextField fx:id="txtEmpContact" labelFloat="true" layoutX="302.0" layoutY="284.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="561.0" promptText="contact" styleClass="textField" />
+      <JFXTextField fx:id="txtEmpNic" labelFloat="true" layoutX="302.0" layoutY="346.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="561.0" promptText="Nic" styleClass="textField" />
+      <JFXTextField fx:id="txtEmpAddress" labelFloat="true" layoutX="302.0" layoutY="414.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="561.0" promptText="Address" styleClass="textField" />
+      <JFXButton fx:id="btnSave" layoutX="483.0" layoutY="534.0" onAction="#saveEmployeeOnAction" prefHeight="81.0" prefWidth="123.0" style="-fx-background-color: #1ca46b; -fx-background-radius: 2EM;" text="Save">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtPriceForADay" labelFloat="true" layoutX="302.0" layoutY="471.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="561.0" promptText="Price For A Day" styleClass="textField" />
+   </children>
+</AnchorPane>

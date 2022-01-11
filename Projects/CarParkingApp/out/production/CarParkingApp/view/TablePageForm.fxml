@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tablePageContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TablePageFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #808080;" text="Parking System">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="22.0" layoutY="169.0" onAction="#openVehicleTable" prefHeight="31.0" prefWidth="191.0" style="-fx-background-color: #C0C0C0;" text="Open Vehicle Table" />
+      <JFXButton layoutX="382.0" layoutY="169.0" onAction="#openDriverTable" prefHeight="31.0" prefWidth="191.0" style="-fx-background-color: #C0C0C0;" text="Open Driver Table" />
+      <JFXButton layoutX="22.0" layoutY="348.0" onAction="#backToManagementPage" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #C0C0C0;" text="&lt;&lt;Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="obContext" prefHeight="881.0" prefWidth="1008.0" stylesheets="@../asserts/styles/SaveCustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ObtainingLeavesPageController">
+   <children>
+      <Label alignment="CENTER" layoutY="-5.0" prefHeight="115.0" prefWidth="1008.0" style="-fx-background-color: #88ca9c;" text="Obtaining Leaves">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="120.0" prefHeight="48.0" prefWidth="96.0" text="Ob ID:">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblObID" layoutX="120.0" layoutY="125.0" prefHeight="38.0" prefWidth="96.0" text="B-001">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label layoutX="332.0" layoutY="120.0" prefHeight="48.0" prefWidth="96.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="443.0" layoutY="120.0" prefHeight="48.0" prefWidth="140.0" text="2021/10/7">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <JFXComboBox fx:id="cmbEmpId" layoutX="14.0" layoutY="187.0" prefHeight="31.0" prefWidth="154.0" />
+      <JFXTextField fx:id="txtEmpName" layoutX="331.0" layoutY="187.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtEmpContact" layoutX="769.0" layoutY="187.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXComboBox fx:id="cmbCustomerID" layoutX="14.0" layoutY="263.0" prefHeight="31.0" prefWidth="154.0" />
+      <JFXTextField fx:id="txtCustName" layoutX="331.0" layoutY="263.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtCustContact" layoutX="769.0" layoutY="263.0" prefHeight="31.0" prefWidth="195.0" />
+      <JFXTextField fx:id="txtBagNo" layoutX="332.0" layoutY="344.0" />
+      <JFXTextField fx:id="txtKg" layoutX="782.0" layoutY="329.0" onKeyReleased="#textFields_Key_Released" styleClass="textField" />
+      <TableView fx:id="tblLeaves" layoutX="111.0" layoutY="505.0" prefHeight="312.0" prefWidth="842.0">
+        <columns>
+          <TableColumn fx:id="colBagNumber" prefWidth="112.0" text="Bag Number" />
+          <TableColumn fx:id="colNumberOfKilos" prefWidth="312.0" text="Number Of Kilos" />
+            <TableColumn fx:id="colWeightOfTheBag" prefWidth="270.0" text="Weight Of the Bag" />
+            <TableColumn fx:id="colWeightOfLeaves" prefWidth="147.0" text="Weight of leaves" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="429.0" prefHeight="48.0" prefWidth="154.0" text="Total Kilos:">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTotal" layoutX="192.0" layoutY="421.0" prefHeight="60.0" prefWidth="108.0" text="400kg">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <JFXButton fx:id="btnAdd" layoutX="706.0" layoutY="428.0" onAction="#addToTableOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #1ca46b; -fx-background-radius: 2em;" text="Add">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="867.0" layoutY="426.0" onAction="#saveDataOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #1ca46b; -fx-background-radius: 2em;" text="Save">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

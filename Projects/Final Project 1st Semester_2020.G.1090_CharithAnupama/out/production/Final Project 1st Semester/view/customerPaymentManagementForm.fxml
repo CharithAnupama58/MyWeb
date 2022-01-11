@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerPaymentContext" prefHeight="750.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerPaymentManagementFormController">
+   <children>
+      <ImageView fitHeight="764.0" fitWidth="1160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/best-assam-tea-tender-leaves.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="356.0" layoutY="128.0" onAction="#openMakeCustomerPaymentForm" prefHeight="148.0" prefWidth="528.0" style="-fx-background-color: #67e464; -fx-background-radius: 2EM;" text="Make Customer Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="356.0" layoutY="335.0" onAction="#openUpdateCustomerPaymentForm" prefHeight="148.0" prefWidth="528.0" style="-fx-background-color: #67e464; -fx-background-radius: 2EM;" text="Update Customer Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="40.0" layoutY="673.0" onAction="#backToAdminPage" prefHeight="56.0" prefWidth="113.0" style="-fx-background-color: #88ca9c; -fx-background-radius: 2EM;" text="Back">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

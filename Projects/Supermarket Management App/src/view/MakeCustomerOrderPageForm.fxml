@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="makeCustomerOrderContext" prefHeight="616.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MakeCustomerOrderPageFormController">
+   <children>
+      <ImageView fitHeight="737.0" fitWidth="981.0" layoutY="-113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/4-super-CF084090.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="360.0" layoutY="174.0" onAction="#addNewCustomerPage" prefHeight="187.0" prefWidth="326.0" style="-fx-background-color: #FFFFFF;" text="Place A Order">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="55.0" layoutY="533.0" onAction="#backToCashierPage" prefHeight="64.0" prefWidth="147.0" style="-fx-background-color: #808080;" text="Back">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

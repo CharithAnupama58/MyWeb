@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PersonLoginForm2Controller">
+   <children>
+      <AnchorPane fx:id="personLoginContext" layoutX="11.0" prefHeight="650.0" prefWidth="578.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="149.0" layoutX="215.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-customer-50.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="14.0" layoutY="294.0" prefHeight="31.0" prefWidth="550.0" promptText="User Name" />
+            <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="14.0" layoutY="376.0" prefHeight="31.0" prefWidth="550.0" promptText="Password" />
+            <JFXButton layoutX="42.0" layoutY="549.0" onAction="#backToLoginPage" prefHeight="59.0" prefWidth="119.0" style="-fx-background-color: #88ca9c; -fx-background-radius: 2em;" text="Back">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="445.0" layoutY="549.0" onAction="#openEmployeePage" prefHeight="59.0" prefWidth="119.0" style="-fx-background-color: #88ca9c; -fx-background-radius: 2em;" text="Login">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

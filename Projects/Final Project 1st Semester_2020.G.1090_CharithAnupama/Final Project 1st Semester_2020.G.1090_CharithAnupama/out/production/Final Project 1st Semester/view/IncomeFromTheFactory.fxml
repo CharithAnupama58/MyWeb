@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="571.0" prefWidth="943.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeFromTheFactoryController">
+   <children>
+      <Label layoutX="14.0" layoutY="131.0" prefHeight="61.0" prefWidth="342.0" text="Income From the Factory:">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotKg" layoutX="367.0" layoutY="146.0" prefHeight="31.0" prefWidth="238.0" />
+      <JFXTextField fx:id="txtUnitPricePerKg" layoutX="691.0" layoutY="146.0" onAction="#calculateCost" prefHeight="31.0" prefWidth="238.0" />
+      <JFXTextField fx:id="txtTotalIncome" layoutX="691.0" layoutY="227.0" prefHeight="31.0" prefWidth="238.0" />
+      <JFXButton layoutX="794.0" layoutY="482.0" onAction="#loadDataOnAction" prefHeight="52.0" prefWidth="135.0" style="-fx-background-color: #1ca46b; -fx-background-radius: 2em;" text="Show">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtDate" layoutX="367.0" layoutY="227.0" prefHeight="31.0" prefWidth="238.0" />
+      <Label layoutX="14.0" layoutY="324.0" prefHeight="61.0" prefWidth="342.0" text="Income Of This Month   :">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtMonthlyIncome" layoutX="367.0" layoutY="339.0" prefHeight="31.0" prefWidth="559.0" />
+   </children>
+</AnchorPane>

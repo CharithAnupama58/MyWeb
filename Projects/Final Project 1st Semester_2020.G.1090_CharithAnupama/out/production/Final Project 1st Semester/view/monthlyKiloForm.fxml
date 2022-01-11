@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="715.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlyKiloFormController">
+   <children>
+      <TableView fx:id="tblMonthly" layoutX="156.0" layoutY="110.0" prefHeight="500.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="colMonth" prefWidth="160.0" text="Month" />
+          <TableColumn fx:id="colKg" prefWidth="239.0" text="Kg" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

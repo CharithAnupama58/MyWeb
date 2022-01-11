@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="483.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LeastMovableItemFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="-2.0" prefHeight="94.0" prefWidth="844.0" text="Least Movable Item Form">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="165.0" prefHeight="94.0" prefWidth="329.0" text="Least Movable Item Is:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCode" layoutX="395.0" layoutY="170.0" prefHeight="85.0" prefWidth="189.0" />
+      <JFXButton layoutX="665.0" layoutY="404.0" onAction="#loadItemCodeOnAction" prefHeight="56.0" prefWidth="142.0" style="-fx-background-color: #808080;" text="Show">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

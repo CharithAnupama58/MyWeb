@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeeManagementPageContext" prefHeight="802.0" prefWidth="1248.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeManagementPageFormController">
+   <children>
+      <Label layoutY="-8.0" prefHeight="810.0" prefWidth="322.0" style="-fx-background-color: #1ca46b;" />
+      <JFXButton layoutX="15.0" layoutY="56.0" onAction="#openEmployeeSaveForm" prefHeight="88.0" prefWidth="294.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Add Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="202.0" onAction="#openUpdateEmployee" prefHeight="88.0" prefWidth="294.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Update Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="11.0" layoutY="346.0" onAction="#openRemoveEmployee" prefHeight="88.0" prefWidth="301.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Remove Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="11.0" layoutY="487.0" onAction="#openAllEmployee" prefHeight="88.0" prefWidth="301.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="All Employees" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="107.0" layoutY="707.0" onAction="#backToAdminPage" prefHeight="57.0" prefWidth="108.0" style="-fx-background-color: #88ca9c; -fx-background-radius: 2em;" text="Back">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="849.0" fitWidth="1202.0" layoutX="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/photo-1602943543714-cf535b048440.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="formContext" layoutX="402.0" layoutY="66.0" prefHeight="648.0" prefWidth="1077.0" style="-fx-background-color: #FFFFFF;" />
+   </children>
+</AnchorPane>

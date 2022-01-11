@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminPageContext" prefHeight="750.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPageFormController">
+   <children>
+      <Label layoutY="-8.0" prefHeight="768.0" prefWidth="247.0" style="-fx-background-color: #1ca46b;" />
+      <ImageView fitHeight="765.0" fitWidth="1140.0" layoutX="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/download.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtDate" alignment="CENTER" layoutX="-3.0" layoutY="116.0" prefHeight="91.0" prefWidth="253.0" style="-fx-background-color: #FFFFFF;" text="Date">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font></Label>
+      <Label fx:id="txtTime" alignment="CENTER" layoutY="266.0" prefHeight="98.0" prefWidth="247.0" style="-fx-background-color: #FFFFFF;" text="Time">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font></Label>
+      <JFXButton layoutX="37.0" layoutY="648.0" onAction="#backToLoginForm" prefHeight="91.0" prefWidth="173.0" style="-fx-background-color: #88ca9c; -fx-background-radius: 2em;" text="Logout">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="322.0" layoutY="172.0" onAction="#openSystemReportsPageOnAction" prefHeight="120.0" prefWidth="418.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="System Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="878.0" layoutY="172.0" onAction="#openCustomerPaymentForm" prefHeight="120.0" prefWidth="432.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Customer Payments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="322.0" layoutY="364.0" onAction="#openEmployeePaymentForm" prefHeight="120.0" prefWidth="418.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Employee Payments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="880.0" layoutY="364.0" onAction="#openVehicleForm" prefHeight="120.0" prefWidth="432.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="322.0" layoutY="548.0" onAction="#openFertilizerPage" prefHeight="120.0" prefWidth="418.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Fertilizer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="880.0" layoutY="540.0" onAction="#openEmployeeForm" prefHeight="120.0" prefWidth="432.0" style="-fx-background-color: #67e464; -fx-background-radius: 2em;" text="Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

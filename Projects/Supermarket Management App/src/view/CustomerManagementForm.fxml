@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="customerManagementPageContext" prefHeight="616.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerManagementFormController">
+   <children>
+      <ImageView fitHeight="725.0" fitWidth="1297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/4-super-CF084090.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="268.0" layoutY="103.0" onAction="#saveCustomerPageForm" prefHeight="90.0" prefWidth="488.0" style="-fx-background-color: #FFFFFF;" text="Save Customer">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="268.0" layoutY="280.0" onAction="#updateCustomerPage" prefHeight="90.0" prefWidth="488.0" style="-fx-background-color: #FFFFFF;" text="Update Customer">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="268.0" layoutY="465.0" onAction="#removeCustomerPage" prefHeight="90.0" prefWidth="488.0" style="-fx-background-color: #FFFFFF;" text="Remove Customer">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="657.0" onAction="#backToCashierPage" prefHeight="54.0" prefWidth="129.0" style="-fx-background-color: #808080;" text="Back">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

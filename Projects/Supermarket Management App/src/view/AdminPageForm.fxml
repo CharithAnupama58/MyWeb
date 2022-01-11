@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="adminPageContext" prefHeight="593.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPageFormController">
+   <children>
+      <Label layoutY="-2.0" prefHeight="602.0" prefWidth="322.0" style="-fx-background-color: #FFA500;" />
+      <Label layoutX="5.0" layoutY="74.0" prefHeight="21.0" prefWidth="62.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="88.0" layoutY="63.0" prefHeight="53.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="190.0" prefHeight="21.0" prefWidth="62.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="88.0" layoutY="179.0" prefHeight="53.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="35.0" layoutY="516.0" onAction="#backToFirstPage" prefHeight="70.0" prefWidth="183.0" style="-fx-background-color: #808080;" text="Logout">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="600.0" fitWidth="809.0" layoutX="322.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/sustainable-supermarket-theplanetapp-scaled.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="369.0" layoutY="190.0" onAction="#openManageItemPage" prefHeight="156.0" prefWidth="293.0" style="-fx-background-color: #FFFFFF;" text="Manage Items">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="786.0" layoutY="190.0" onAction="#openSystemReportsPage" prefHeight="156.0" prefWidth="322.0" style="-fx-background-color: #FFFFFF;" text="System Reports">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="671.0" prefWidth="1028.0" stylesheets="@../asserts/styles/SaveCustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MakeFertilizerOrderFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="83.0" prefWidth="1028.0" style="-fx-background-color: #88ca9c;" text="Place Order Form">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="111.0" prefHeight="43.0" prefWidth="150.0" text="Order ID:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrderID" disable="true" labelFloat="true" layoutX="190.0" layoutY="117.0" prefHeight="31.0" prefWidth="186.0" text="O-001" />
+      <JFXComboBox fx:id="cmbCustomerID" layoutX="14.0" layoutY="210.0" prefHeight="31.0" prefWidth="150.0" />
+      <JFXTextField fx:id="txtCustomerName" disable="true" layoutX="408.0" layoutY="210.0" prefHeight="31.0" prefWidth="213.0" />
+      <JFXTextField fx:id="txtContact" disable="true" layoutX="771.0" layoutY="210.0" prefHeight="31.0" prefWidth="213.0" />
+      <JFXComboBox fx:id="cmbFertID" layoutX="14.0" layoutY="302.0" prefHeight="31.0" prefWidth="150.0" />
+      <JFXTextField fx:id="txtFertName" disable="true" layoutX="272.0" layoutY="296.0" />
+      <JFXTextField fx:id="txtFertUnitPrice" disable="true" layoutX="537.0" layoutY="296.0" />
+      <JFXTextField fx:id="txtQuantity" layoutX="773.0" layoutY="296.0" onAction="#loadPaymentOnAction" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="213.0" styleClass="textField" />
+      <Label layoutX="11.0" layoutY="450.0" prefHeight="43.0" prefWidth="157.0" text="Total Price:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalPrice" disable="true" layoutX="207.0" layoutY="456.0" />
+      <JFXButton fx:id="btnSave" layoutX="836.0" layoutY="529.0" onAction="#saveOrderOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #1ca46b; -fx-background-radius: 2em;" text="Save">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtDate" layoutX="759.0" layoutY="117.0" prefHeight="31.0" prefWidth="213.0" />
+   </children>
+</AnchorPane>
