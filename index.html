@@ -28,6 +28,13 @@
             display:inline-block;
             background-color: #e6e6fa;
         }
+        header > ul > li:hover {
+            cursor: pointer;
+            color: red;
+        }
+        header > ul > li>a{
+            text-decoration: none;
+        }
         header>img{
             background-size: cover;
         }
@@ -276,20 +283,102 @@
             font-size: 25px;
             color: white;
         }
+        footer>h2{
+            font-size: 80px;
+            text-align: center;
+        }
+        footer{
+            position: relative;
+            background-color: #6c6c6c;
+            height: 900px;
+            top: -430px;
+        }
+        footer>div{
+            position: absolute;
+            background-color: white;
+        }
+        footer>p{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+        }
+        footer>div>p{
+            top: 0;
+            color: darkgrey;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #eleventhDiv{
+            top: 200px;
+            width: 80%;
+            height: 50px;
+            left: 150px;
+        }
+        #twelvethDiv{
+            top: 300px;
+            width: 80%;
+            height: 50px;
+            left: 150px;
+        }
+        #thirteenthDiv{
+            top: 400px;
+            width: 80%;
+            height: 180px;
+            left: 150px;
+        }
+        #fourteenthDiv{
+            top: 600px;
+            right: 150px;
+            height: 60px;
+            width: 105px;
+            background-color: #e6e6fa;
+        }
+        #fourteenthDiv>p{
+            font-size: 30px;
+            text-align: center;
+            color: #181818;
+        }
+        footer>address>a>img{
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            top: 700px;
+
+        }
+        #tenthImg{
+            left: 150px;
+        }
+        #elevenImg{
+            left: 245px;
+        }
+        #twelveImg{
+            left: 335px;
+        }
+        #thirteenImg{
+            left: 425px;
+        }
+        #fourteenImg{
+            left: 515px;
+        }
+        #fifteenImg{
+            left: 605px;
+        }
 
     </style>
 </head>
 <body>
-<header>
+<header id="homepage">
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Education</li>
-            <li>Projects</li>
-            <li>Assignmets</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#aboutUs">About</a></li>
+            <li><a href="#tenthSe">Education</a></li>
+            <li><a href="#secondSe">Projects</a></li>
+            <li><a href="#thirdSe">Assignmets</a></li>
+            <li><a href="#firstSe">Skills</a></li>
+            <li><a href="#last">Contact</a></li>
         </ul>
     </nav>
 
@@ -304,7 +393,7 @@
 </header>
 <hr>
 <main>
-    <section>
+    <section id="aboutUs">
          <h2>About</h2>
         <img src="Assignments/asserts/images/IMG-20201229-WA0010.jpg" alt="" width="200" height="200" >
         <ul>
@@ -356,15 +445,19 @@
         <div id="sixthDiv"><p>Assignment 3</p><img src="Assignments/asserts/images/assignment-icon-vector-trendy-flat-education-collection-isolated-white-background-illustration-can-be-used-web-164826443.jpg" alt=""></div>
     </section>
 </main>
-<hr>
-<footer>
+<footer id="last">
      <h2>Contact</h2>
-    <address></address>
-    <address></address>
-    <address></address>
-    <address></address>
-    <address></address>
-    <address></address>
+    <p>Have a question or want to work together?</p>
+    <div id="eleventhDiv"><p>Name</p></div>
+    <div id="twelvethDiv"><p>Email</p></div>
+    <div id="thirteenthDiv"><p>Your Message</p></div>
+    <div id="fourteenthDiv"><p>Submit</p></div>
+    <address><a href="https://www.linkedin.com/feed/"><img id="tenthImg" src="Assignments/asserts/images/download6.png" alt=""></a></address>
+    <address><a href="https://www.facebook.com/charith.anupamapathiranage"><img id="elevenImg" src="Assignments/asserts/images/download8.png" alt=""></a></address>
+    <address><a href="https://www.instagram.com/"><img id="twelveImg" src="Assignments/asserts/images/Instagram_logo_2016.svg.png" alt=""></a></address>
+    <address><a href=""><img id="thirteenImg" src="Assignments/asserts/images/download10.png" alt=""></a></address>
+    <address><a href="https://github.com/CharithAnupama58"><img id="fourteenImg" src="Assignments/asserts/images/648256.png" alt=""></a></address>
+    <address><a href=""><img id="fifteenImg" src="Assignments/asserts/images/valencia-spain-march-05-2017-260nw-601425683.jpg" alt=""></a></address>
 </footer>
 </body>
 </html>
