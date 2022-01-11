@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="Assignments/asserts/css/fonts/css/all.css">
     <style>
         header {
             position: relative;
-            height: 800px;
+            height: 730px;
             box-shadow: -2px 6px 9px -4px #917a7a;
+        }
+        body>main{
+            position: relative;
         }
 
 
@@ -63,14 +67,183 @@
             font-size: 100px;
         }
         main>section{
+            position: relative;
             background-color: #6c6c6c;
             background-size: cover;
+            margin: auto;
+            box-shadow: -2px 6px 9px -4px #917a7a;
+        }
+        section>img{
+            position: absolute;
         }
        section>h2{
             font-size: 80px;
             text-align: center;
         }
+        section:nth-child(1) {
+            position: relative;
+            height: 650px;
+            top: -75px;
 
+        }
+        section:nth-child(2) {
+            height: 750px;
+        }
+
+        section > ul {
+            top: 150px;
+            position: absolute;
+            right: 380px;
+            bottom: 0;
+            font-size: 24px;
+            list-style: none;
+            font-weight: bold;
+
+        }
+
+        section > ul > li {
+            padding: 0 10px 0 10px;
+            display: flow;
+            color: white;
+        }
+        section:nth-child(1)>p{
+            position: absolute;
+            top: 350px;
+            right: 100px;
+            bottom: 0;
+            font-size: 24px;
+            list-style: none;
+            font-weight: bold;
+            color: white;
+        }
+        section:nth-child(1)>img{
+            border-radius: 100%;
+            position: absolute;
+            left: 200px;
+            top: 250px;
+        }
+        section:nth-child(2)>p{
+            position: absolute;
+            top: 200px;
+            right: 100px;
+            bottom: 0;
+            font-size: 24px;
+            list-style: none;
+            font-weight: bold;
+            color: white;
+        }
+        main>section>div{
+            position: absolute;
+            box-shadow: -2px 6px 9px -4px #917a7a;
+        }
+        #firstTXT{
+            background-color: darkgrey;
+            width: 80%;
+            height: 110px;
+            left: 150px;
+        }
+        #secondTXT{
+            background-color: darkgrey;
+            width: 80%;
+            height: 110px;
+            left: 150px;
+        }
+        #thirdTXT{
+            background-color: darkgrey;
+            width: 80%;
+            height: 110px;
+            left: 150px;
+        }
+        #tenthSe>div>p{
+            top: -15px;
+            left: 140px;
+            font-weight: bold;
+            color: white;
+            font-size: 35px;
+        }
+        #tenthSe>div>img {
+            position: absolute;
+            top: 0;
+        }
+
+        #firstSe{
+            height: 700px;
+            top: -215px;
+        }
+        #secondSe{
+            height: 700px;
+            top: -290px;
+        }
+        #thirdSe{
+            height: 700px;
+            top: -365px;
+        }
+        #firstSe>img{
+            height: 200px;
+            width: 200px;
+
+        }
+        #firstImg{
+            left: 50px;
+        }
+        #secondImg{
+            left: 45%;
+        }
+        #thirdImg{
+            left: 84%;
+        }
+        #fourthImg{
+            bottom: 20px;
+            left: 50px;
+        }
+        #fifthImg{
+            bottom: 20px;
+            left:45%;
+        }
+        #secondSe>div{
+            background-color: darkgrey;
+            top: 200px;
+            width: 15%;
+            height: 250px;
+            box-shadow: -2px 6px 9px -4px #917a7a;
+        }
+        #firstDiv{
+            left: 100px;
+        }
+        #secondDiv{
+            left: 500px;
+        }
+        #thirdDiv{
+            left: 950px;
+        }
+
+        section>div>img{
+            position: absolute;
+        }
+        section>div>p{
+            position: absolute;
+        }
+
+        #secondSe>div>img{
+            top: 0;
+            height: 150px;
+            width: 100%;
+        }
+        #secondSe>div>p{
+            top:130px;
+            left: 60px;
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+        }
+        #secondSe>img{
+            right: 20px;
+            height: 150px;
+            width: 150px;
+            top: 250px;
+
+
+        }
 
     </style>
 </head>
@@ -88,7 +261,7 @@
         </ul>
     </nav>
 
-        <img src="Assignments/asserts/images/chris-ried-ieic5Tq8YMk-unsplas-1200x4005%20(1).jpg" alt="Snow" width="1500" height="810">
+    <img src="Assignments/asserts/images/chris-ried-ieic5Tq8YMk-unsplas-1200x4005%20(1).jpg" alt="Snow" width="1500" height="730">
     <h1 class="first-txt">Hi</h1>
     <h2 class="second-txt">I am Charith</h2>
     <h3 class="third-txt">And</h3>
@@ -101,36 +274,49 @@
 <main>
     <section>
          <h2>About</h2>
+        <img src="Assignments/asserts/images/IMG-20201229-WA0010.jpg" alt="" width="200" height="200" >
+        <ul>
+            <li>Name   -Charith Anupama</li>
+            <li>Age    -21</li>
+            <li>Country-Sri Lanka</li>
+            <li>City   -Galle</li>
+        </ul>
 
 
-        <center><p><b>Name   -Charith Anupama</b></p>
-                <p><b>Age    -21</b></p>
-                <p><b>Country-Sri Lanka</b></p>
-                <p><b>City   -Galle</b></p></center>
+       <p>I am a student at IJSE.I have currently completed the
+           <br>1st semester of this course.IJSE is a best way to
+           <br> become a skillful Software Engineer in Sri Lanka.
+           <br>As I completed the 1st semester of this program,
+           <br>I have some knowledge about Java in the Present.</p>
 
-        <img src="Assignments/asserts/images/WhatsApp%20Image%202021-09-25%20at%2015.16.58.jpeg" alt="my image" width="=600" height="300">
-       <center><pre><b>I am a student at IJSE.I have currently completed the
-            1st semester of this course.IJSE is a best way to
-            become a skillful Software Engineer in Sri Lanka.
-            As I completed the 1st semester of this program,
-            I have some knowledge about Java in the Present.</b></pre></center>
+    </section>
+    <section id="tenthSe" style="position: relative; height: 800px;top: -140px">
+
+         <h2>Education</h2>
+        <div id="firstTXT"style="top: 200px;"><p>Mahinda College <br> 2006-2019</p><img src="Assignments/asserts/images/MahindaCollegeLogo.jpg" alt="" width="120px"height="110px"></div>
+        <div id="secondTXT" style="top: 350px;"><p>Institute Of Java And Software Engineering <br>2020-2023</p><img src="Assignments/asserts/images/ijselogo.png" alt=""width="120px"height="110px"></div>
+        <div id="thirdTXT" style="top: 500px;"><p>University Of Peradeniya <br>2022-2026</p><img src="Assignments/asserts/images/University_of_Peradeniya_crest.png" alt=""width="120px"height="110px"></div>
+    </section>
+    <hr>
+    <section id="firstSe">
+        <h2>Skills</h2>
+        <img id="firstImg"src="Assignments/asserts/images/download.png" alt="">
+        <img id="secondImg"src="Assignments/asserts/images/png-clipart-mysql-database-graphics-microsoft-access-logo-blue-web-design-thumbnail.png" alt="">
+        <img id="thirdImg"src="Assignments/asserts/images/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="">
+        <img id="fourthImg"src="Assignments/asserts/images/download1.png" alt="">
+        <img id="fifthImg"src="Assignments/asserts/images/download2.png" alt="">
 
     </section>
     <hr>
-    <section>
-        <center> <h1>Education</h1></center>
-        <center><p><b>Mahinda College 2006-2019</b></p>
-        <p><b>IJSE 2020-2023</b></p>
-        <p><b>University Of Peradeniya 2022-2026</b></p></center>
+    <section id="secondSe">
+        <h2>Projects</h2>
+        <img src="Assignments/asserts/images/images.png" alt="">
+        <div id="firstDiv"><p>Supermarket <br>System</p><img src="Assignments/asserts/images/istockphoto-1128949343-612x612.jpg" alt=""></div>
+        <div id="secondDiv"><p>Car Parking <br>System</p><img src="Assignments/asserts/images/empty-parking-lots-aerial-view-260nw-586368239.jpg" alt=""></div>
+        <div id="thirdDiv"><p>Tea Collection <br>System</p><img src="Assignments/asserts/images/depositphotos_5946965-stock-photo-tea-bud-and-leaves.jpg" alt=""></div>
     </section>
     <hr>
-    <section>
-        <center> <h1>Skills</h1></center>
-    </section>
-    <hr>
-    <section> <center> <h1>Projects</h1></center></section>
-    <hr>
-    <section> <center> <h1>Assignments</h1></center></section>
+    <section id="thirdSe"><h2>Assignments</h2></section>
     <hr>
     <section> <center> <h1>Gallery</h1></center></section>
 </main>
