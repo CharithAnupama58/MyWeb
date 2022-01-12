@@ -8,6 +8,7 @@
         header {
             position: relative;
             height: 730px;
+            top: -9px;
             box-shadow: -2px 6px 9px -4px #917a7a;
         }
         body>main{
@@ -28,15 +29,16 @@
             display:inline-block;
             background-color: #e6e6fa;
         }
-        header > ul > li:hover {
+        header >nav> ul > li>a:hover {
             cursor: pointer;
             color: red;
         }
-        header > ul > li>a{
+        header >nav> ul > li>a{
             text-decoration: none;
         }
         header>img{
             background-size: cover;
+            top: 0;
         }
        header>h1{
             position: absolute;
@@ -90,7 +92,7 @@
         section:nth-child(1) {
             position: relative;
             height: 650px;
-            top: -75px;
+            top: -84px;
 
         }
         section:nth-child(2) {
@@ -175,14 +177,14 @@
 
         #firstSe{
             height: 700px;
-            top: -215px;
+            top: -218px;
         }
         #secondSe{
             height: 700px;
             top: -290px;
         }
         #thirdSe{
-            height: 700px;
+            height: 642px;
             top: -365px;
         }
         #firstSe>img{
@@ -243,12 +245,26 @@
             font-size: 25px;
             color: white;
         }
+        #secondSe>div>a{
+            text-decoration: none;
+        }
+        #secondSe>div>a>p:hover {
+            cursor: pointer;
+            color: red;
+        }
         #secondSe>a>img{
             position: absolute;
             right: 20px;
             height: 150px;
             width: 150px;
             top: 250px;
+        }
+        #thirdSe>div>a{
+            text-decoration: none;
+        }
+        #thirdSe>div>a>p:hover {
+            cursor: pointer;
+            color: red;
         }
         #thirdSe>a>img{
             position: absolute;
@@ -293,7 +309,7 @@
             position: relative;
             background-color: #6c6c6c;
             height: 900px;
-            top: -430px;
+            top: 990px;
         }
         footer>div{
             position: absolute;
@@ -370,7 +386,9 @@
         #tenthSe{
             height: 800px;
             top: -140px
-
+        }
+        main{
+            height: 2369px;
         }
 
     </style>
@@ -418,7 +436,7 @@
            <br>I have some knowledge about Java in the Present.</p>
 
     </section>
-    <section id="tenthSe">
+    <section id="tenthSe" style="top: -148px">
 
          <h2>Education</h2>
         <div id="firstTXT"style="top: 200px;"><p>Mahinda College <br> 2006-2019</p><img src="Assignments/asserts/images/MahindaCollegeLogo.jpg" alt="" width="120px"height="110px"></div>
@@ -433,23 +451,22 @@
         <img id="thirdImg"src="Assignments/asserts/images/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="">
         <img id="fourthImg"src="Assignments/asserts/images/download1.png" alt="">
         <img id="fifthImg"src="Assignments/asserts/images/download2.png" alt="">
-
     </section>
     <hr>
     <section id="secondSe">
         <h2>Projects</h2>
-        <a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects"><img src="Assignments/asserts/images/images.png" alt=""></a>
-        <div id="firstDiv"><a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects/Supermarket%20Management%20App"><p>Supermarket <br>System</p><img src="Assignments/asserts/images/istockphoto-1128949343-612x612.jpg" alt=""></a></div>
-        <div id="secondDiv"><a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects/CarParkingApp"><p>Car Parking <br>System</p><img src="Assignments/asserts/images/empty-parking-lots-aerial-view-260nw-586368239.jpg" alt=""></a></div>
-        <div id="thirdDiv"><a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects/Final%20Project%201st%20Semester_2020.G.1090_CharithAnupama"><p>Tea Collection <br>System</p><img src="Assignments/asserts/images/depositphotos_5946965-stock-photo-tea-bud-and-leaves.jpg" alt=""></a></div>
+        <a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects"target="_blank"><img src="Assignments/asserts/images/images.png" alt=""></a>
+        <div id="firstDiv"><a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects/Supermarket%20Management%20App"target="_blank"><p>Supermarket <br>System</p><img src="Assignments/asserts/images/istockphoto-1128949343-612x612.jpg" alt=""></a></div>
+        <div id="secondDiv"><a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects/CarParkingApp"target="_blank"><p>Car Parking <br>System</p><img src="Assignments/asserts/images/empty-parking-lots-aerial-view-260nw-586368239.jpg" alt=""></a></div>
+        <div id="thirdDiv"><a href="https://github.com/CharithAnupama58/MyWeb/tree/main/Projects/Final%20Project%201st%20Semester_2020.G.1090_CharithAnupama"target="_blank"><p>Tea Collection <br>System</p><img src="Assignments/asserts/images/depositphotos_5946965-stock-photo-tea-bud-and-leaves.jpg" alt=""></a></div>
     </section>
     <hr>
     <section id="thirdSe">
         <h2>Assignments</h2>
-        <a href="Index2.html"><img src="Assignments/asserts/images/images.png" alt=""></a>
-        <div id="fourthDiv"><a href="Assignments/Case%201.html"><p>Assignment 1</a></p><img src="Assignments/asserts/images/assignment-icon-vector-trendy-flat-education-collection-isolated-white-background-illustration-can-be-used-web-164826443.jpg" alt=""></div>
-        <div id="fifthDiv"><a href="Assignments/Case%202.html"><p>Assignment 2</a></p><img src="Assignments/asserts/images/assignment-icon-vector-trendy-flat-education-collection-isolated-white-background-illustration-can-be-used-web-164826443.jpg" alt=""></div>
-        <div id="sixthDiv"><a href="Assignments/Case%203.html"><p>Assignment 3</a></p><img src="Assignments/asserts/images/assignment-icon-vector-trendy-flat-education-collection-isolated-white-background-illustration-can-be-used-web-164826443.jpg" alt=""></div>
+        <a href="Index2.html"target="_blank"><img src="Assignments/asserts/images/images.png" alt=""></a>
+        <div id="fourthDiv"><a href="Assignments/Case%201.html"target="_blank"><p>Assignment 1</a></p><img src="Assignments/asserts/images/assignment-icon-vector-trendy-flat-education-collection-isolated-white-background-illustration-can-be-used-web-164826443.jpg" alt=""></div>
+        <div id="fifthDiv"><a href="Assignments/Case%202.html"target="_blank"><p>Assignment 2</a></p><img src="Assignments/asserts/images/assignment-icon-vector-trendy-flat-education-collection-isolated-white-background-illustration-can-be-used-web-164826443.jpg" alt=""></div>
+        <div id="sixthDiv"><a href="Assignments/Case%203.html"target="_blank"><p>Assignment 3</a></p><img src="Assignments/asserts/images/assignment-icon-vector-trendy-flat-education-collection-isolated-white-background-illustration-can-be-used-web-164826443.jpg" alt=""></div>
     </section>
 </main>
 <footer id="last">
@@ -459,11 +476,11 @@
     <div id="twelvethDiv"><p>Email</p></div>
     <div id="thirteenthDiv"><p>Your Message</p></div>
     <div id="fourteenthDiv"><p>Submit</p></div>
-    <address><a href="https://www.linkedin.com/feed/"><img id="tenthImg" src="Assignments/asserts/images/download6.png" alt=""></a></address>
-    <address><a href="https://www.facebook.com/charith.anupamapathiranage"><img id="elevenImg" src="Assignments/asserts/images/download8.png" alt=""></a></address>
-    <address><a href="https://www.instagram.com/charith_anupama/"><img id="twelveImg" src="Assignments/asserts/images/Instagram_logo_2016.svg.png" alt=""></a></address>
+    <address><a href="https://www.linkedin.com/feed/"target="_blank"><img id="tenthImg" src="Assignments/asserts/images/download6.png" alt=""></a></address>
+    <address><a href="https://www.facebook.com/charith.anupamapathiranage" target="_blank"><img id="elevenImg" src="Assignments/asserts/images/download8.png" alt=""></a></address>
+    <address><a href="https://www.instagram.com/charith_anupama/"target="_blank"><img id="twelveImg" src="Assignments/asserts/images/Instagram_logo_2016.svg.png" alt=""></a></address>
     <address><a href=""><img id="thirteenImg" src="Assignments/asserts/images/download10.png" alt=""></a></address>
-    <address><a href="https://github.com/CharithAnupama58"><img id="fourteenImg" src="Assignments/asserts/images/648256.png" alt=""></a></address>
+    <address><a href="https://github.com/CharithAnupama58" target="_blank"><img id="fourteenImg" src="Assignments/asserts/images/648256.png" alt=""></a></address>
     <address><a href=""><img id="fifteenImg" src="Assignments/asserts/images/valencia-spain-march-05-2017-260nw-601425683.jpg" alt=""></a></address>
 </footer>
 </body>
