@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation With jQuery</title>
+</head>
+<body>
+<h1 id="firstH1">Hello jQuery.!</h1>
+<h1 id="secondH1">Hello jQuery.!</h1>
+<h2>Let's manipulate the DOM</h2>
+<h3 id="titleThree">Let's manipulate the DOM</h3>
+<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid animi explicabo,
+    impedit maiores
+    molestias odit perferendis placeat quis quo quos sed voluptatem? Ad architecto at facilis nesciunt omnis.</p>
+<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid animi explicabo,
+    impedit maiores
+    molestias odit perferendis placeat quis quo quos sed voluptatem? Ad architecto at facilis nesciunt omnis.</p>
+<hr>
+<ul id="list">
+    <li>ABSD</li>
+    <li>GDSE</li>
+    <li>DEP</li>
+    <li>GDSE</li>
+</ul>
+
+<hr>
+
+<input id="txtContent" placeholder="Input Something" type="text" value="assets/images/image.jpg">
+<button id="btn">Test</button>
+<button id="btn1">Set Text</button>
+<button id="btnUp">UP</button>
+<button id="btnDown">Down</button>
+<button id="btnSetImage">Set Image</button>
+<hr>
+
+<img alt="" src="" id="display" width="900px">
+<hr>
+
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/js/my-script.js"></script>
+<script>
+
+    /*document.querySelector("h1").style.color='red';
+     document.querySelector("h1").innerText="Hello IJSE";*/
+
+
+    /*  $("h1").text("Haai");
+        $("#titleTwo").text("Changed title two");*/
+
+    /* jQuery Selector*/
+    /* $("css selector")*/
+
+
+    /*How to change the default selector symbol*/
+    /*$("")*/ // default symbol
+
+      var RS = jQuery.noConflict();
+      RS("h1").text("Text Changed");
+
+    // RS() new selector symbol;
+
+
+    /*  /!*we can select any dom element from type*!/
+      $("h1").text("Hello DOM");
+      /!*id selector*!/
+      $("#titleThree").css('color', 'red');
+      /!*class selector*!/
+      $(".para").css('background', 'red');
+      /!*universal selector*!/
+      /!*    console.log( $("*").text());*!/
+      /!*attribute selector*!/
+      $("[id]").remove();
+      /!*pseudo - class selector*!/
+       $("li:first-child").css('color','red');
+       $("li:last-child").css('color','green');
+       $("li:nth-child(2)").css('color','orange');
+       */
+
+
+    /*  What about CSS Combinators..?*/
+
+    /* Child combinator
+     Decendent Combinator
+     Adjacent Combinator
+     Generel Siblings Combinator*/
+
+    /*Child Combinator*/
+    // $("body>ul>li").css('color','red');
+
+    // Decendant Combinator
+    // $("body li").css("color", "orange");
+
+    // Adjacent Combinator
+    // $("h3+p").css("background", 'green');
+
+    //General Siblings Combinator
+    // $("h3~p").css("background", 'green');
+
+
+    //selector grouping
+    /*$("h1,h2,h3").remove();*/
+
+
+    /*
+        /!*How to write a click event in jQuery*!/
+        $("#btn").click(function () {
+            $("#firstH1").css('color', 'red');
+        });
+    */
+
+    /*    $("#btn1").click(function(){
+            $("#secondH1").text($("#txtContent").val());
+        });*/
+
+    /*
+        $("#btnUp").click(function () {
+            $("#list").prepend("<li>" + $('#txtContent').val() + "</li>");
+            /!*<li>text value</li>*!/
+        });
+        $("#btnDown").click(function () {
+            $("#list").append("<li>" + $('#txtContent').val() + "</li>");
+        });
+    */
+
+
+    $("#btnSetImage").click(function(){
+        // $("#txtContent").val();// typed value
+        $("#display").attr('src',$("#txtContent").val());
+    });
+
+
+
+</script>
+</body>
+</html>
