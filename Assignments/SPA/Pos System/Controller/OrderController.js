@@ -55,6 +55,7 @@ $("#btnAddItem").click(function () {
     $("#itemDetailsBody>tr").off("click");
     saveItemDetails();
     loadAllItemDetails();
+    clearTextFields();
     var total=setTotal();
     $("#txtTotal").val(total);
     balanceDiscount();
@@ -62,7 +63,7 @@ $("#btnAddItem").click(function () {
 
 
     $("#itemDetailsBody>tr").click(function(){
-
+        $("#btnUpdateItem").attr('disabled', false);
         let itemId=$(this).children(":eq(0)").text();
         let name=$(this).children(":eq(1)").text();
         let price=$(this).children(":eq(2)").text();
@@ -98,7 +99,9 @@ $("#btnUpdateItem").click(function () {
 
     alert("Updated.");
     loadAllItemDetails();
+    clearTextFields();
     $("#itemDetailsBody>tr").click(function(){
+        $("#btnUpdateItem").attr('disabled', false);
 
         let itemId=$(this).children(":eq(0)").text();
         let name=$(this).children(":eq(1)").text();
@@ -121,6 +124,7 @@ $("#btnUpdateItem").click(function () {
 });
 $("#btnPurchase").click(function () {
     placeOrder();
+    clearCustFields();
 
 
 })
@@ -132,6 +136,7 @@ function saveItemDetails() {
     let IQty=$("#txtOQty").val();
     let SQty=$("#txtIQty").val();
     $("#txtIQty").val(SQty-IQty);
+
 
     var IList=new ItemDetails(Id,IName,IPrice,IQty);
     itemList.push(IList);
@@ -197,6 +202,7 @@ $("#txtCash").on('keyup', function (eventOb) {
         let aDiscount=tot-dis;
         let balance =cash - aDiscount;
         $("#txtBalance").val(parseInt(balance));
+        $("#btnPurchase").attr('disabled', false);
     }
 });
 function placeOrder() {
@@ -222,7 +228,24 @@ function updateItemQTY() {
         }
 
     }
+}
+$("#txtOQty").click(function () {
+    $("#btnAddItem").attr('disabled', false);
+});
+function clearTextFields() {
+    $("#cmbItem,#txtIName,#txtIPrice,#txtIQty,#txtOQty").val("");
+    $("#btnAddItem").attr('disabled', true);
+    $("#btnUpdateItem").attr('disabled', true);
 
 }
+function clearCustFields() {
+    $("#cmbCustomer,#txtCustName,#txtCustAge,#txtCustTell").val("");
+    $("#btnAddItem").attr('disabled', true);
+    $("#btnUpdateItem").attr('disabled', true);
+    $("#btnPurchase").attr('disabled', true);
+    $("#itemDetailsBody").empty();
+}
+
+
 
 
