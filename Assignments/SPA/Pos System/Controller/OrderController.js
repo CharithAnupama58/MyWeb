@@ -53,12 +53,19 @@ $("#cmbItem").click(function () {
 });
 $("#btnAddItem").click(function () {
     $("#itemDetailsBody>tr").off("click");
-    saveItemDetails();
-    loadAllItemDetails();
-    clearTextFields();
-    var total=setTotal();
-    $("#txtTotal").val(total);
-    balanceDiscount();
+    let IQty=$("#txtOQty").val();
+    let SQty=$("#txtIQty").val();
+    let b=checkQty(IQty,SQty);
+    if (b){
+        alert("Not Have Enough Quantity");
+    }else{
+        saveItemDetails();
+        loadAllItemDetails();
+        clearTextFields();
+        var total=setTotal();
+        $("#txtTotal").val(total);
+        balanceDiscount();
+    }
 
 
 
@@ -136,8 +143,6 @@ function saveItemDetails() {
     let IQty=$("#txtOQty").val();
     let SQty=$("#txtIQty").val();
     $("#txtIQty").val(SQty-IQty);
-
-
     var IList=new ItemDetails(Id,IName,IPrice,IQty);
     itemList.push(IList);
 }
@@ -244,6 +249,13 @@ function clearCustFields() {
     $("#btnUpdateItem").attr('disabled', true);
     $("#btnPurchase").attr('disabled', true);
     $("#itemDetailsBody").empty();
+}
+function checkQty(iQty,sQty){
+    if (iQty>sQty){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 
