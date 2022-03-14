@@ -130,8 +130,6 @@ $("#btnPurchase").click(function () {
     placeOrder();
     clearCustFields();
     generateOrderID();
-
-
 })
 
 function saveItemDetails() {
@@ -243,6 +241,7 @@ function clearCustFields() {
     $("#btnAddItem").attr('disabled', true);
     $("#btnUpdateItem").attr('disabled', true);
     $("#btnPurchase").attr('disabled', true);
+    $("#txtTotal,#txtDiscount,#txtCash,#txtBalance").val("");
     $("#itemDetailsBody").empty();
 }
 function checkQty(iQty,sQty){
@@ -252,4 +251,5 @@ function checkQty(iQty,sQty){
         return false;
     }
 }
+
 
